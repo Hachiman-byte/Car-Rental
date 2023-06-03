@@ -1,0 +1,39 @@
+.view{
+	padding: 5px 15px 5px 15px;
+	margin: auto;
+	background-color: #ffc107;
+	border:1px solid #ed9008;
+	color: white;
+	text-decoration: none;
+}
+.product .box2{
+	height: 80%;
+}
+.product .box2 form .label2{
+	position: absolute;
+	left: 19%;
+	font-family: "Raleway", sans-serif;
+	font-weight: 700;
+	padding: 8px 0 0 0;	
+	font-size: 15px;
+}
+.overlay1 .box1 form .input2{
+	width: 50%;
+	height: 30px;
+	position: relative;
+	left: 34%;
+	margin-bottom: 7px;
+}
+.overlay1 .box1 form .description{
+	margin-top: 2%;
+	position: absolute;
+	left: 5%;
+}
+.overlay1 .box1 form .textarea{
+	width: 90%;
+	height: 35%;
+	position: absolute;
+	top: 53%;
+	left: 5%;
+	resize: none;
+}

@@ -1,0 +1,432 @@
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
+.tablebox{
+	background-color: white;
+	width: 73%;
+	position: absolute;
+	top: 28%;
+	right: 1%;
+	border-radius: 10px;
+	border-top: 3px solid gray;
+	border-bottom: 3px solid gray;
+	padding:2%;
+	display: flex;
+	flex-direction: column;
+}
+.tablebox table{
+	width: 100%;
+	margin-top: 1%;
+}
+.tablebox table,tr,th,td{
+	border:1px solid silver;
+	border-collapse: collapse;
+	padding: 5px;
+}
+.tablebox table tr:nth-child(odd){
+	background-color: #8080802e;
+}
+.tablebox tr td{
+	font-size: 17px;
+}
+.tablebox table tr td img{
+	width: 50px;
+	height: 50px;
+}
+.tablebox tr td .cart{
+	background-color: #00bcd4;
+	color: white;
+	padding: 5px 7px 5px 7px;
+	border:1px solid #3d3dff;
+	font-weight: 600;
+	margin-right: 5px;	
+}
+.tablebox tr td .edit{
+	background-color: #4dc34d;
+	color: white;
+	padding: 5px 7px 5px 7px;
+	border:1px solid #3d3dff;
+	font-weight: 600;
+	margin-right: 5px;	
+}
+.tablebox tr td .delete{
+	background-color: #ff3d00;
+	color: white;
+	padding: 5px 7px 5px 7px;
+	border:1px solid #3d3dff;
+	font-weight: 600;	
+}
+.tablebox tr td .active{
+	background-color: #19b519cc;
+	color: white;
+	padding: 3px 0px 3px 6px;
+	border:1px solid #3d3dff;
+	border-radius: 5px;
+	font-size: 70%;
+	font-weight: 700;
+}
+.tablebox tr td .inactive{
+	background-color: #ff0000c9;
+	color: white;
+	padding: 3px 0px 3px 6px;
+	border:1px solid #3d3dff;
+	border-radius: 5px;
+	font-size: 70%;
+	font-weight: 700;
+}
+.tablebox .add{
+	background-color: #3c8dbc;
+	padding: 7px;
+	font-weight: 700;
+	color: white;
+	border:none;
+	margin-bottom: 10px;
+	position: relative;
+	left: 1%;
+	width: 6%;
+}
+.tablebox .add1{
+	background-color: #3c8dbc;
+	padding: 7px;
+	font-weight: 700;
+	color: white;
+	border:none;
+	margin: 10px 0 10px 0;
+	text-decoration: none;
+}
+.tablebox .info{
+	width: 99.1%;
+	background-color: #f8f5f0;
+	border-radius: 8px 8px 0 0;
+	color: #98978b;
+	border:1px solid silver;
+	padding: 12px 0 12px 8px;
+	font-family: sans-serif;
+	font-weight: 700;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.tablebox .upcategory{
+	margin-top: 5%;
+	margin-left: 25%;
+}
+.tablebox table tr td{
+	font-size: 15px;
+	padding: 8px 0 8px 15px;
+}
+.tablebox table tr td a:hover{
+	cursor: pointer;
+}
+.tablebox table tr td a{
+	font-weight: 500;
+	font-size: 13px;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	font-family: sans-serif;
+	border: none;
+	padding: 5px;
+}
+.overlay1{
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.3);
+	z-index: 5;
+	position: absolute;
+	font-family: "Inter", sans-serif;
+}
+.overlay1 .box1{
+	background-color: white;
+	width: 45%;
+	position: absolute;
+	top: 3%;
+	left: 29%;
+	border-radius: 10px;
+	padding-bottom: 5%;
+}
+.overlay1 .box1 h3{
+	margin:  16px 0 15px 23px;
+	width: 100%;
+}
+.overlay1 .box1 h3:after{
+	content: '';
+	background-color: silver;
+	position: absolute;
+	top: 50px;
+	width: 100%;
+	height: 1px;
+	left: 0;
+}
+.overlay1 .box1 form label{
+	position: absolute;
+	left: 15%;
+	font-weight: 700;
+	padding: 8px 0 0 0;	
+	font-size: 15px;
+}
+.overlay1 .box1 form .top{
+	margin-top: 5%;
+}
+.overlay1 .box1 form .input1{
+	width: 50%;
+	height: 35px;
+  	padding: 0 0 0 10px;
+	position: relative;
+	left: 34%;
+	margin-bottom: 7px;
+	border: none;
+	background-color: #80808021;
+	border: 1px solid silver;
+	border-radius: 4px;
+}
+.overlay1 .box1 form .add{
+	position: absolute;
+	bottom: 10px;
+	left: 84%;
+	width: 15%;
+	height: 40px;
+	font-weight: 900;
+	background-color: #3c8dbc;
+    border:1px solid #367fa9;
+}
+.overlay1 .box1 .close1{
+	position: absolute;
+	bottom: 10px;
+	left: 1%;
+	width: 15%;
+	height: 40px;
+	font-weight: 900;
+	background-color: white;
+    border:1px solid red;
+}
+.tablebox .section textarea{
+	resize: none;
+	width: 60%;
+	height: 70px;
+	border: 1px solid silver;
+	font-size: 15px;
+	font-family: sans-serif;
+	padding:3px;
+	background-color: #80808021;
+    border-radius: 4px;
+}
+.tablebox .section1{
+	margin-top: 10%;
+}
+.tablebox .section1 label{
+	position: absolute;
+	top: 26%;
+	left: 18%;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+.tablebox .section2 label{
+	position: absolute;
+	left: 19%;
+	font-family: sans-serif;
+	font-weight: 700;
+}
+.tablebox .section3 label{
+	position: absolute;
+	left: 12.5%;
+	font-family: sans-serif;
+	font-weight: 700;	
+}
+.tablebox .section{
+	margin-left: 25%;
+	margin-bottom: 20px;
+}
+.tablebox .section input{
+	width: 40%;
+    height: 35px;
+    padding: 0 0 0 10px;
+    margin-bottom: 7px;
+    border: none;
+    background-color: #80808021;
+    border: 1px solid silver;
+    border-radius: 4px;
+}
+.tablebox form .updateinfobtn{
+	position: absolute;
+	bottom: 2%;
+	left: 3%;
+	border: none;
+	padding: 1.5%;
+	font-size: 15px;
+	font-weight: 700;
+	background-color: #4caf50b3;
+}
+.tablebox form .updateinfobtn:hover{
+	cursor: pointer;
+}
+.updatenotif{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	width: 20%;
+	padding: 5px;
+	font-size: 15px;
+	border-left: 3px solid green;
+}
+.tablebox .sections{
+	margin-top: 10px;
+}
+.tablebox .sections label{
+	margin-left: 10%;
+}
+
+.tablebox form .row{
+	display: flex;
+	flex-direction: row;
+	gap: 10%;
+}
+.tablebox form .row .column{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+	gap: 5px;
+}
+.tablebox form .row .column label{
+	font-weight: 700;
+	font-size: 17px;
+	font-family: sans-serif;
+	color: #607d8b;
+}
+.tablebox form .row .column .vehicleinfo{
+	width: 250px;
+	padding: 12px 0 12px 5px;
+	font-size: 15px;
+	border: none;
+	background-color: #80808021;
+	border-radius: 4px;
+	border: 1px solid silver;
+}
+.tablebox form .row .column textarea{
+	resize: none;
+	width: 1000px;
+	height: 200px;
+	padding: 5px;
+	border: none;
+	background-color: #80808021;
+	border: 1px solid silver;
+}
+.tablebox form #addvehicle{
+	width: 10%;
+	padding: 1%;
+	font-weight: 700;
+	font-size: 15px;
+	cursor: pointer;
+	border: none;
+	background-color: #00800087;
+	margin-left: 90%;
+	border-radius: 5px;
+	color: white;
+}
+.tablebox form .row1{
+	display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-left: 35%;
+    margin-top: 5%;
+}
+.tablebox form .row1 .column1{
+	display: flex;
+    flex-direction: column;
+}
+.tablebox form .row1 .column1 input{
+	width: 50%;
+    padding: 7px;
+    height: 30px;
+    font-size: 15px;
+    background-color: #80808017;
+    border: 1px solid silver;
+}
+.tablebox form .row1 .column1 label{
+	font-weight: 700;
+	font-family: sans-serif;
+}
+.tablebox form #update1{
+	position: absolute;
+    bottom: 10%;
+    right: 10%;
+    padding: 15px;
+    font-size: 15px;
+    background-color: #008000c4;
+    border: none;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    width: 120px;
+    cursor: pointer;
+}
+.tablebox .notif{
+	position: absolute;
+    top: 12%;
+    left: 5%;
+    font-family: sans-serif;
+}
+.tablebox1{
+	background-color: white;
+    width: 73%;
+    position: absolute;
+    top: 28%;
+    left: 23%;
+    border-radius: 10px;
+    display: grid;
+    place-items: center;
+    padding-bottom: 10px;
+    border-top: 3px solid gray;
+    border-bottom: 3px solid gray;
+}
+.tablebox1 .box{
+	padding: 2%;
+	border: 1px solid gray;
+	width: 90%;
+}
+.tablebox1 .box0{
+	background-color: #8080802e;
+}
+.tablebox1 .box1{
+	padding: 2% 2% 5% 2%;
+	position: relative;
+}
+.tablebox1 .box .boxin{
+	display: flex;
+	margin-bottom: 5px;
+}
+.tablebox1 .box .boxin b{
+	font-family: sans-serif;
+}
+.tablebox1 .box .boxin p{
+	margin-left: 10px;
+}
+.tablebox1 .box .boxon{
+	position: relative;
+}
+.tablebox1 .box .boxon b{
+	font-family: sans-serif;
+	color: coral;
+}
+.tablebox1 .box .boxon p{
+	font-family: "Courier New";
+	font-weight: 700;
+	margin: 10px 0 20px 15px;
+	font-size: 17px;
+}
+.tablebox1 .box .delete{
+	width: 8%;
+	background-color: #ff0000a8;
+	padding: 10px;
+	border: none;
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	bottom: 10%;
+	right: 2%;
+	text-align: center;
+	font-weight: 700;
+}

@@ -1,0 +1,696 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: "Inter",sans-serif;
+	background-color: #607d8b4d;
+	overflow-x: hidden;
+}
+.active{
+	color: red;
+}
+.navbar{
+	height: 70px;
+	width: 100%;
+	background-color: black;
+	display: flex;
+	place-content: center;
+	position: relative;
+}
+.navbar a{
+	padding: 1.5%;
+	font-size: 20px;
+	font-weight: 700;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	transition: ease-in-out .2s;
+}
+.navbar a:hover{
+	color: #ff9a7a;
+}
+.navbar .logo{
+	position: absolute;
+	left: 1%;
+	top: 10%;
+	cursor: pointer;
+	background-color: #ececec;
+	padding: 2px;
+	border-radius: 50%;
+}
+.navbar .logo img{
+	width: 150px;
+	height: 50px;
+}
+.navbar .profile{
+	position: absolute;
+	right: 1%;
+	top: 10%;
+	cursor: pointer;
+}
+.navbar .profile img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 3px solid silver;
+}
+.background .qoute{
+	background-color: black;
+	width: 45%;
+	height: 100%;
+	position: absolute;
+	opacity: .7;
+	border-right: 1px solid orangered;
+	transition: ease-in-out 1s;
+}
+.background .qoute .text{
+	position: absolute;
+	top: 16%;
+	left: 5%;
+	width: 94%;
+	font-size: 50px;
+	color: white;
+}
+.background .qoute .text1{
+ 	color: white;
+ 	position: absolute;
+	top: 44%;
+	left: 5%;
+	color: white;
+}
+.background .qoute .book{
+	position: absolute;
+	top: 57%;
+    left: 84%;
+	text-decoration: none;
+	padding: 2%;
+	border: 3px solid orangered;
+	width: 130px;
+	font-size: 20px;
+	border-radius: 8px;
+	color: white;
+	font-weight: 700;
+	background-color: black;
+}
+.background .qoute .book:hover{
+	background-color: #565050;
+}
+.background .qoute .book img{
+	width: 20px;
+	height: 20px;
+}
+#dropdown{
+	width: 10%;
+	background-color: black;
+	position: absolute;
+	right: 1%;
+	top: 10%;
+	display: flex;
+	flex-direction: column;
+	padding: 1%;
+	z-index: 5;
+	border: 1px solid silver;
+	display: none;
+}
+#dropdown a{
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	padding: 2%;
+	transition: ease-in-out .3s;
+	display: block;
+}
+#dropdown a:hover{
+	color: #e57b7b;
+}
+.right{
+	position: absolute;
+	left: 1%;
+	top: 15%;
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	gap: 30px;
+}
+.right .filter{
+	background-color: white;
+	padding: 10%;
+	border-radius: 10px;
+	    box-shadow: 4px 4px 17px 28px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 4px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+}
+.right .filter h2{
+	margin-bottom: 15px;
+}
+.right .filter .select form{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+.right .filter .select select{
+	padding: 13px;
+	font-size: 15px;
+	background-color: #607d8b2e;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	cursor: pointer;
+	transition: ease-in-out .5s;
+}
+.right .filter .select .btn{
+	padding: 10px;
+	font-size: 15px;
+	background-color: red;
+	width: 100%;
+	border-radius: 5px;
+	font-weight: 700;
+	font-size: 20px;
+	color: white;
+	border: none;
+	cursor: pointer;
+	text-decoration: none;
+	text-align: center;
+}
+.right-section{
+	padding: 5%;
+	background-color: white;
+	border-radius: 10px;
+	    box-shadow: 4px 4px 17px 28px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 4px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+}
+.right-section div{
+	display: flex;
+	gap: 1px;
+}
+.right-section h2{
+	width: 100%;
+	border-bottom: 1px solid silver;
+	margin-bottom: 8px;
+	font-size: 20px;
+}
+.right-section div img{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.right-section1{
+	padding: 1%;
+	background-color: white;
+	position: absolute;
+	right: 1%;
+	top: 18%;
+	border-radius: 10px;
+	box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+}
+.right-section1 div{
+	display: flex;
+	gap: 1px;
+}
+.right-section1 h2{
+	width: 100%;
+	border-bottom: 1px solid silver;
+	margin-bottom: 8px;
+	font-size: 20px;
+}
+.right-section1 div img{
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+.carlist{
+	background-color: white;
+    width: 60%;
+    position: absolute;
+    right: 11%;
+    top: 15%;
+    border-radius: 10px;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.carlist .cards{
+	height: 250px;
+	display: flex;
+	position: relative;
+	transition: ease-in-out .2s;
+	border-radius: 5px;
+}
+.carlist .cards:hover{
+	box-shadow: -1px 2px 14px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 2px 14px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 2px 14px -3px rgba(0,0,0,0.75);
+}
+.carlist .cards .car{
+	width: 38%;
+	height: auto;
+	border-radius: 5px 0 0 5px;
+	border-top: 1px solid silver;
+	border-left: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+.carlist .cards .info{
+	width: 100%;
+	background-color: #607d8b2e;
+	position: relative;
+	padding: 3%;
+	border-radius: 0 5px 5px 0;
+	border-top: 1px solid silver;
+	border-right: 1px solid silver;
+	border-bottom: 1px solid silver;
+}
+.carlist .cards .info .name{
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+.carlist .cards .info .other{
+	display: flex;
+	margin-top: 15px;
+}
+.carlist .cards .info .other p{
+	font-size: 14px;
+}
+.carlist .cards .info .other img{
+	width: 25px;
+	height: 25px;
+}
+.carlist .cards .viewbtn{
+	display: flex;
+	position: absolute;
+	color: white;
+	font-weight: 700;
+	font-size: 20px;
+	position: absolute;
+	bottom: 8%;
+	right: 2%;
+	padding: 1.3%;
+	background-color: #ff0000b8;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.carlist .cards .viewbtn img{
+	width: 20px;
+	height: 20px;
+}
+.about{
+	padding: 5%;
+	text-align: center;
+	background-color: white;
+	width: 80%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	border-radius: 15px;
+}
+#contact-us{
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	color: #650000;;
+}
+#gtnt{
+	position: absolute;
+	top: 30%;
+    left: 6%;
+}
+.contactbox{
+	display: flex;
+    flex-direction: column;
+    width: 45%;
+    background-color: white;
+    margin: 13% 0 0 5%;
+    padding: 3% 3% 5% 3%;
+    border-radius: 15px;
+    position: relative;
+    gap: 10px;
+    box-shadow: 4px 4px 17px 28px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 4px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+}
+.contactbox label{
+	font-weight: 700;
+	font-size: 17px	;
+}
+.contactbox textarea{
+	resize: none;
+	width: 100%;
+	height: 300px;
+	background-color: #8080801f;
+	padding: 5px;
+}
+.contactbox input{
+	padding: 2%;
+	font-size: 17px;
+	font-weight: 700;
+	background-color: #ff5722;
+	border: none;
+	position: absolute;
+	bottom: 10px;
+	right: 33px;
+	color: white;
+	cursor: pointer;
+	border-radius: 5px;
+}
+.contact-info{
+	position: absolute;
+    top: 41%;
+    right: 13%;
+	display: flex;
+	flex-direction: column;
+	padding: 2%;
+	gap: 10px;
+}
+.contact-info h2{
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+.contact-info div{
+	display: flex;
+}
+.contact-info div i{
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.detail-box{
+	background-color: white;
+	width: 85%;
+	padding: 2%;
+	margin-left: 6%;
+	margin-top: 3%;
+	position: relative;
+	border-radius: 10px;
+	margin-bottom: 15px;
+	box-shadow: 4px 4px 17px 28px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 4px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+}
+.detail-box .carinfo{
+	width: 100%;
+	height: 422px;
+	display: flex;
+}
+.detail-box .carinfo .carpic{
+	width: 50%;
+	height: 100%;
+}
+.detail-box .carinfo .cardetails{
+	padding: 0 1% 0 2%;
+	flex-grow: 1;
+	position:relative;
+}
+.detail-box .carinfo .cardetails div{
+	display: flex;
+}
+.detail-box .carinfo .cardetails .types{
+	gap: 40px;
+	margin-left: 15%;
+	margin-top: 25px;
+	margin-bottom: 50px;
+}
+.detail-box .carinfo .cardetails .types .minibox{
+	width: 100px;
+	height: 100px;
+	border: 1px solid silver;
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	place-items: center;
+	gap: 5px;
+	border-radius: 5px;
+}
+.detail-box .carinfo .cardetails .types .minibox img{
+	width:50%;
+	height: 50px;
+}
+.detail-box .carinfo .cardetails .types .minibox b{
+	font-size: 20px;
+}
+.detail-box .carinfo .cardetails .types .minibox p{
+	color: red;
+	font-size: 11px;
+}
+.detail-box .carinfo .cardetails .price{
+	font-size: 0px;
+	display: flex;
+	flex-direction: column;
+}
+.detail-box .carinfo .cardetails .price b{
+	font-size: 35px;
+	color: red;
+}
+.detail-box .carinfo .cardetails .price p{
+	font-size: 15px;
+	color: gray;
+	margin-left: 30px;
+}
+.description h2{
+	width: 17%;
+	font-weight: 300;
+	font-family: "Impact";
+	border-top: 4px solid coral;
+}
+.description textarea{
+	resize: none;
+	width: 72%;
+	height: 300px;
+	border: none;
+	padding: 1%;
+	font-size: 17px;
+	font-family: sans-serif;
+}
+.booknow{
+	z-index: 7;
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+	position: absolute;
+	top: 60%;
+	right: 2%;
+	padding: 2%;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+.booknow h2{
+	font-weight: 800;
+}
+.booknow form{
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	margin-top: 10px;
+}
+.booknow form label{
+	font-size: 15px;
+	color: gray;
+	font-weight: 700;
+}
+.booknow form input{
+	padding: 4%	;
+	font-size: 17px;
+	background-color: #8080803b;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.booknow form .book{
+	background-color: red;
+	font-weight: 700;
+	font-size: 20px;
+	color: white;
+	margin-top: 15px;
+}
+.booknow form .book:hover{
+	background-color: #ff0000c4;
+}
+.profile-box{
+	width: 50%;
+	background-color: white;
+	padding: 4% 4% 9% 4%;
+	margin: 4%  0 2% 20.5%;
+	border-radius: 10px;
+	position: relative;
+	    box-shadow: 4px 4px 17px 28px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 4px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+}
+.profile-box form #save{
+	padding: 1.7%;
+	font-size: 18px;
+	position: absolute;
+	bottom: 5%;
+	right: 6%;
+	background-color: green;
+	font-weight: 700;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.profile-box .profile-section{
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+.profile-box .profile-section .rowss{
+	display: flex;
+	flex-direction: row;
+	gap: 10%;
+}
+.profile-box .profile-section .rowss .names{
+	display: flex;
+	flex-direction: column;
+}
+.profile-box .profile-section .rowss label{
+	font-weight: 700;
+	margin-top: 10px;
+}
+.profile-box .profile-section .rowss input{
+	padding: 12px;
+	font-size: 15px;
+	width: 100%;
+	border-radius: 5px;
+	border: none;
+	background-color: #80808036;
+}
+.profile-label{
+	font-weight: 700;
+}
+.profile-box .profile-section .ro{
+	display: flex;
+	flex-direction: column;
+}
+.profile-box .profile-section .ro .profile-label1{
+	font-weight: 700;
+}
+.profile-box .profile-section .ro .input1{
+	padding: 7px;
+	font-size: 15px;
+	width: 15%;
+	border-radius: 5px;
+	border: none;
+	background-color: #80808036;
+}
+.profile-box .profile-section .ro input{
+	padding: 7px;
+	font-size: 15px;
+	width: 30%;
+	border-radius: 5px;
+	border: none;
+	background-color: #80808036;
+}
+.bookingbox{
+	display: flex;
+	flex-direction: column;
+	width: 61%;
+    background-color: white;
+    padding: 4%;
+    margin: 3% 0 2% 26%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 4px 4px 17px 28px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 4px 12px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 4px 4px 17px 3px rgba(0,0,0,0.75);
+}
+.bookingbox h3{
+	font-size: 22px;
+}
+.bookingbox .bookingtitle{
+	margin-bottom: 40px;
+	color: red;
+}
+.bookingbox .bookingcards{
+	width: 100%;
+	padding: 1%;
+	margin-top: 2%;
+}
+.bookingbox .bookingcards img{
+	width: 200px;
+	height: 150px;
+}
+.bookingbox .bookingcards .carddetails{
+	position: relative;
+	flex-grow: 1;
+}
+.bookingbox .bookingcards .carddetails b{
+	font-size: 20px;
+	
+}
+.bookingbox .bookingcards .carddetails .details{
+	font-size: 14px;
+	color:gray;
+	margin-top: 20px;
+}
+.bookingbox .bookingcards .carddetails .indication{
+	padding: 2%;
+	position: absolute;
+	right: 1%;
+	border-radius: 5px;
+	font-size: 13px;
+	top: 10%;
+	font-weight: 700;
+}
+.bookingbox table,tr,th,td{
+	border: 1px solid gray;
+	border-collapse: collapse;
+}
+.bookingbox table tr th,td{
+	padding: 3%;
+}
+.bookingbox table tr td{
+	text-align: center;
+	font-size: 15px;
+}
+.bookingbox table{
+	margin-bottom: 20px;
+}
+.bookingbox .pay{
+	padding: 1.5%;
+	font-size: 17px;
+	font-weight: 700;
+	background-color: #8bc34a;
+	color: white;
+	border: none;
+	width: 10%;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-left: 87%;
+	border-radius: 10px;
+}
+.bookingbox .del{
+	padding: 1.5%;
+	font-size: 17px;
+	font-weight: 700;
+	background-color: coral;
+	color: white;
+	border: none;
+	width: 10%;
+	text-decoration: none;
+	text-align: center;
+	margin-bottom: 10px;
+	margin-left: 87%;
+	border-radius: 10px;	
+}
+.plz{
+	color: red;
+	z-index: 10;
+	font-weight: 700;
+}
+.bookingbox1{
+	margin: 3% 0% 2% 17%;
+}
+.bookingbox1 .bookingcards table{
+	width: 100%;
+}
+.bookingbox1 .bookingcards img{
+	width: 500px;
+	height: 300px;
+}

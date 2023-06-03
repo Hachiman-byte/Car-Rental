@@ -1,0 +1,70 @@
+html{
+	overflow: hidden;
+}
+.bottom-right1{
+	width: 76%;
+    height: 75%;
+    position: fixed;
+    top: 26%;
+    left: 20.1%;
+    background-color: white;
+    box-shadow: 1px -6px 5px 0px rgb(163 157 157 / 75%);
+    -webkit-box-shadow: 1px -6px 5px 0px rgb(163 157 157 / 75%);
+    -moz-box-shadow: 1px -6px 5px 0px rgba(163,157,157,0.75);
+    padding: 4% 2% 2% 2%;
+    text-align: center;
+}
+.book{
+	width: 100%;
+	border-bottom: 1px solid silver;
+	position: absolute;
+	top: 26%;
+	left: 20.1%;
+	z-index: 5;
+	padding: 1% 10px 10px 10px;
+	background-color: #8080801f;
+	font-weight: 700;
+	font-size: 18px;
+	font-family: sans-serif;
+}
+table{
+	width: 100%;
+}
+table,tr,td{
+	border:1px solid silver;
+	border-collapse: collapse;
+}
+table tr td{
+	font-size: 18px;
+	padding: 8px;
+}
+table tr th{
+	font-weight: 700;
+	font-size: 25px;
+	padding: 8px;
+	font-family: sans-serif;
+	color: #f44336;
+}
+table tr:nth-child(odd){
+	background-color: #9e9e9e33;
+}
+.label{
+	font-family: "Roboto","Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 700;
+	text-align: center;
+}
+.inputs{
+	font-family: Impact;
+	font-size: 18px;
+	padding: 8px;
+	border: 1px solid silver;
+}
+.input1{
+	background-color: #4caf50ba;
+}
+.input2{
+	background-color: #ff00009e;
+}
+.inputs:hover{
+	cursor: pointer;
+}

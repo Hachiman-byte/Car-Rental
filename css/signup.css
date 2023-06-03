@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+}
+body{
+	background-color: #6b29144f;
+	background-image: url("../img/city.png");
+	background-size: cover;
+	background-color: #607d8bd6;
+	overflow-x: hidden;
+}
+.car{
+	width: 60%;
+    height: 500px;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 32%;
+    left: -9%;
+}
+.car1{
+	width: 60%;
+    height: 500px;
+    position: absolute;
+    top: 32%;
+    right: -11%;
+}
+.overlay{
+	background-color: black;
+	opacity: .7;
+	width: 100%;
+	height: 110%;
+	position: absolute;
+	z-index: 2;
+}
+.box{
+	z-index: 3;
+	margin: 2%;
+	width: 40%;
+	padding: 1% 2% 2% 2%;
+	background-color: white;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	font-family: "Inter", sans-serif;
+	border-radius: 10px;
+	box-shadow: 1px -1px 36px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 1px -1px 36px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 1px -1px 36px -3px rgba(0,0,0,0.75);
+}
+.box .title{
+	color: #a12f05;
+}
+.box .remind{
+	color: #764f43;
+}
+.box form .row{
+	display: flex;
+	gap: 2%;
+	margin-bottom: 5px;
+	font-size: 15px;
+	font-weight: 700;
+}
+.box form .row div{
+	display: flex;
+	flex-direction: column;
+	flex-grow: 1;
+	margin: 2px 0 2px 0;
+}
+.box form .column{
+	display: flex;
+	flex-direction: column;
+	font-size: 15px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+.input{
+	width: auto;
+  	height: 40px;
+  	padding: 0 0 0 10px;
+ 	border-radius: 7px;
+	outline: none;
+	border: 1px solid black;
+	filter: drop-shadow(0px 1px 0px #efefef)
+    drop-shadow(0px 1px 0.5px rgba(239, 239, 239, 0.5));
+	transition: all 0.3s cubic-bezier(0.15, 0.83, 0.66, 1);
+}
+.input:focus{
+	border: 1px solid transparent;
+	box-shadow: 0px 0px 0px 2px #242424;
+	background-color: transparent;
+}
+.submit{
+	text-align: center;
+	width: 100%;
+	background-color: black;
+	color: white;
+	font-weight: 700;
+	font-size: 21px;
+	cursor: pointer;
+}
+.submit:hover{
+	background-color: black;
+}
+.bot{
+	margin-top: 15px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+}
